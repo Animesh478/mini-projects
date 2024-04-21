@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to top, #dac0a3, #eadbc8, #fefaf6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-family: "Quicksand", sans-serif;
+}
+
+.game-console {
+  position: relative;
+  display: flex;
+  height: 35rem;
+  width: 60rem;
+  overflow: hidden;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  backdrop-filter: blur(200px);
+  filter: blur();
+}
+
+.player {
+  flex: 50%; /*each element took 50% of the available space*/
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  word-spacing: 2px;
+}
+
+.total {
+  color: #deac80;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: auto;
+}
+
+.current {
+  text-align: center;
+  background-color: #deac80;
+  border-radius: 0.5rem;
+  width: 15rem;
+  padding: 2rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+  vertical-align: middle;
+  opacity: 0.8;
+}
+
+.current-label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.current-score {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.btn {
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur();
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  border-radius: 5rem;
+  border: none;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn--new {
+  position: absolute;
+  top: 3rem;
+}
+
+.btn--roll {
+  position: absolute;
+  bottom: 10rem;
+}
+
+.btn--hold {
+  position: absolute;
+  bottom: 5rem;
+}
+.dice {
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10rem;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.6);
+}
