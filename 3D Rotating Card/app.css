@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  height: 650px;
+  width: 600px;
+  margin: 6rem auto;
+  /* border: 2px solid black; */
+  position: relative;
+  /* background: none; */
+  perspective: 1500px; /*it is applied on the parent element*/
+}
+
+.card-side {
+  height: 550px;
+  width: 80%;
+  border: 2px solid black;
+  backface-visibility: hidden; /*hides the back of an element*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.8s ease;
+}
+
+.front {
+  background: linear-gradient(45deg, #ff7f3e, #ffc96f, #acd793);
+}
+.back {
+  background: linear-gradient(to right top, #5c2fc2, #5c88c4, #6fdce3);
+  transform: rotateY(-180deg);
+}
+/* .card:hover .card-side.front {
+  transform: rotateY(180deg);
+} */
+/* .card:hover .card-side.back {
+  transform: rotateY(0);
+} */
