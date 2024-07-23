@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  background-image: url("./assets/computer.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+.lucide-menu {
+  color: white;
+  position: relative;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+.lucide-menu:hover {
+  cursor: pointer;
+}
+.sidebar {
+  position: absolute;
+  height: 100%;
+  width: 15rem;
+  left: -16rem;
+  box-shadow: 1px 1px 6px rgba(255, 255, 255, 0.5);
+  /* transition: 2.2s cubic-bezier(0.36, -0.01, 0, 0.77); */
+  /* background-color: rgba(255, 255, 255, 0.1);   */
+}
+.hidden {
+  display: none;
+}
+.title {
+  text-align: center;
+  color: white;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.title span {
+  flex-grow: 5;
+  font-size: 1.2rem;
+}
+.lucide-x {
+  align-self: flex-end;
+  flex-grow: 1;
+  color: black;
+}
+.lucide-x:hover {
+  cursor: pointer;
+}
+.empty::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+.links {
+  color: white;
+  vertical-align: center;
+}
+
+.link {
+  /* margin-top: 1.5rem; */
+  padding-left: 0.6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.link:hover {
+  border-left: 2px solid #fff;
+  box-shadow: 0 0 4px #ffff;
+  cursor: pointer;
+}
+.links div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.link span {
+  font-size: 1rem;
+}
